@@ -7,9 +7,9 @@
       "description": "# An API to test the button Try in Client\n\n```js\nconst toto = {};\n```",
       "id": "d70885bb-0e09-4bcc-b64e-c2dc4e17e124",
       "importedFrom": "25d5a693-7679-4efd-82ea-5b7b81b60042",
-      "lastModified": "2018-07-17T14:42:40.293+02:00",
+      "lastModified": "2018-07-17T15:03:43.276+02:00",
       "name": "Try in Client - 2",
-      "remoteModification": "2018-07-16T17:36:02.496+02:00"
+      "remoteModification": "2018-07-17T15:04:18.952+02:00"
     },
     {
       "type": "Request",
@@ -155,8 +155,8 @@
       },
       "description": "Description of myGET method",
       "id": "5a0db831-48f5-44bc-82be-27f6f5872832",
-      "lastModified": "2018-07-17T14:42:40.305+02:00",
-      "name": "myGET",
+      "lastModified": "2018-07-17T15:03:42.588+02:00",
+      "name": "myGETdth",
       "headers": [
         {
           "name": "data-type",
@@ -181,6 +181,9 @@
           "value": "200"
         }
       ],
+      "metaInfo": {
+        "ownerId": "eece56ec-1ff5-4682-8e56-ec1ff53682f1"
+      },
       "parentId": "941220e1-b64b-4ba6-9832-ed813c43e064"
     },
     {
