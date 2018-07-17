@@ -1,0 +1,223 @@
+{
+  "front-version": "2.103.1",
+  "version": 3,
+  "nodes": [
+    {
+      "type": "Project",
+      "description": "# An API to test the button Try in Client\n\n```js\nconst toto = {};\n```",
+      "id": "d70885bb-0e09-4bcc-b64e-c2dc4e17e124",
+      "importedFrom": "25d5a693-7679-4efd-82ea-5b7b81b60042",
+      "lastModified": "2018-07-17T14:42:40.293+02:00",
+      "name": "Try in Client - 2",
+      "remoteModification": "2018-07-16T17:36:02.496+02:00"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "",
+        "name": "GET"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "path": "myendpoint.fr/file/{file}"
+      },
+      "id": "14ce6954-4371-46a7-be28-777363324072",
+      "lastModified": "2018-07-17T14:42:40.304+02:00",
+      "name": "GET /file/{file}",
+      "headers": [],
+      "assertions": [],
+      "parentId": "d70885bb-0e09-4bcc-b64e-c2dc4e17e124"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "",
+        "name": "POST"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "path": "myendpoint.fr/file/{file}"
+      },
+      "id": "4394dbfb-1d59-49a2-b3d4-65670d6be00a",
+      "lastModified": "2018-07-17T14:42:40.304+02:00",
+      "name": "POST /file/{file}",
+      "headers": [],
+      "assertions": [],
+      "parentId": "d70885bb-0e09-4bcc-b64e-c2dc4e17e124"
+    },
+    {
+      "type": "Service",
+      "description": "# Titi tata toto\n\n```js\nconst toto = {};\n```",
+      "id": "941220e1-b64b-4ba6-9832-ed813c43e064",
+      "lastModified": "2018-07-17T14:42:40.304+02:00",
+      "name": "My section",
+      "parentId": "d70885bb-0e09-4bcc-b64e-c2dc4e17e124"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "",
+        "name": "POST"
+      },
+      "body": {
+        "bodyType": "Text",
+        "textBody": "{\n  \"a data-type\" :\"test\"\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "path": "myendpoint.fr/path"
+      },
+      "description": "Description of myPOST method",
+      "id": "4300d4c2-093d-4a43-9b4f-b5092eb6467a",
+      "lastModified": "2018-07-17T14:42:40.305+02:00",
+      "name": "myPOST",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "assertions": [],
+      "parentId": "941220e1-b64b-4ba6-9832-ed813c43e064"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "link": "",
+        "name": "GET"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "name": "data-type",
+              "value": "a data-type example"
+            },
+            {
+              "enabled": true,
+              "name": "myQueryParamInt",
+              "value": "12"
+            },
+            {
+              "enabled": true,
+              "name": "myQueryParamObj",
+              "value": "myQueryParamObj example"
+            },
+            {
+              "enabled": true,
+              "name": "myQueryParamString",
+              "value": "an example value"
+            },
+            {
+              "name": "myQueryParamBoolean",
+              "value": "false"
+            },
+            {
+              "name": "myQueryParamString2",
+              "value": "an enum value"
+            }
+          ]
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "path": "myendpoint.fr/path/{path}"
+      },
+      "description": "Description of myGET method",
+      "id": "5a0db831-48f5-44bc-82be-27f6f5872832",
+      "lastModified": "2018-07-17T14:42:40.305+02:00",
+      "name": "myGET",
+      "headers": [
+        {
+          "name": "data-type",
+          "value": "a data-type"
+        },
+        {
+          "enabled": true,
+          "name": "myHeaderString",
+          "value": "a default value"
+        },
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/json"
+        }
+      ],
+      "assertions": [
+        {
+          "comparison": "Equals",
+          "subject": "ResponseStatus",
+          "path": "code",
+          "value": "200"
+        }
+      ],
+      "parentId": "941220e1-b64b-4ba6-9832-ed813c43e064"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "",
+        "name": "PUT"
+      },
+      "body": {
+        "bodyType": "File"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "path": "myendpoint.fr/file/{file}"
+      },
+      "description": "Description of myPUT method",
+      "id": "b1c6e558-55b0-4592-9d65-3943ffadd7dd",
+      "lastModified": "2018-07-17T14:42:40.305+02:00",
+      "name": "myPUT",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "assertions": [],
+      "parentId": "d70885bb-0e09-4bcc-b64e-c2dc4e17e124"
+    }
+  ]
+}
